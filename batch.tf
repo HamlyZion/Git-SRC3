@@ -1,4 +1,7 @@
-/* Déploiement ressourcegroup + storage account batch
+/*Déploiement ressourcegroup + storage account batch*/
+
+/*Penser à ajouter les autres fichiers*/
+
 resource "azurerm_resource_group" "rg_batch" {
   count = 3
   name     = "theoruf$(count)"
@@ -13,4 +16,3 @@ resource "azurerm_storage_account" "sa_batch" {
   account_replication_type = "GRS"
   access_tier              = "Cool"
 }
-*/
