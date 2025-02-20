@@ -1,4 +1,3 @@
-/*
 variable "location_map" {
   type = map
   default = {
@@ -21,7 +20,7 @@ variable "subnet_count" {
     type = map
     default = {
         "subnet1" = {
-            name = "Subnet-Prod"
+            name = "Subnet-Production"
             address_prefix = ["10.0.1.0/24"]
         }
         "subnet2" = {
@@ -32,6 +31,9 @@ variable "subnet_count" {
             name = "Subnet-Direction"
             address_prefix = ["10.0.3.0/24"]
         }
+        "subnet3" = {
+            name = "Subnet-Invités"
+            address_prefix = ["10.0.4.0/24"]
+        }
     }
 }
-*/
