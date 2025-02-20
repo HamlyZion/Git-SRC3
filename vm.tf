@@ -1,4 +1,3 @@
-/*
 resource "azurerm_virtual_machine" "trtf_vm" {
   name                  = "Ubuntu-trtf"
   location              = azurerm_resource_group.trtf-rg-map["rg1"].location
@@ -25,7 +24,7 @@ resource "azurerm_virtual_machine" "trtf_vm" {
     managed_disk_type = "Standard_LRS"
   }
   os_profile {
-    computer_name  = "Ubnt01"
+    computer_name  = "Ubuntu-01"
     admin_username = "theo_ruf"
     admin_password = random_password.trtf_pwd.result
   }
@@ -33,4 +32,3 @@ resource "azurerm_virtual_machine" "trtf_vm" {
     disable_password_authentication = false
   }
 }
-*/
